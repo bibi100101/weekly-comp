@@ -36,7 +36,7 @@ def ms_to_time(time):
             return("{0}:0{1}.0{2}".format(minutes, seconds, milliseconds))
         elif seconds < 10:
             return("{0}:0{1}.{2}".format(minutes, seconds, milliseconds))
-        elif milliseconds:
+        elif milliseconds < 10:
             return("{0}:{1}.0{2}".format(minutes, seconds, milliseconds))
         return("{0}:{1}.{2}".format(minutes, seconds, milliseconds))
 
